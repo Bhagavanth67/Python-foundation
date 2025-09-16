@@ -1,0 +1,22 @@
+# Consider day 1 of the month begins from Monday
+def days_of_week(day):
+    if day == 1 or day % 7 == 1:
+        return "Monday"
+    elif day == 2 or day % 7 == 2:
+        return "Tuesday"
+    elif day == 3 or day % 7 == 3:
+        return "Wednesday"
+    elif day == 4 or day % 7 == 4:
+        return "Thursday"
+    elif day == 5 or day % 7 == 5:
+        return "Friday"
+    elif day == 6 or day % 7 == 6:
+        return "Saturday"
+    elif day == 7 or day % 7 == 0:
+        return "Sunday"
+    else:
+        return "Invalid response"
+
+day = int(input("Enter the value : ")) 
+result = days_of_week(day)
+print(result)
